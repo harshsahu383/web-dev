@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100%;
+        }
+        .container{
+            background: linear-gradient(to right, #0094FF, #6D35FF, #FF2DAF);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;   
+            flex-direction: column;
+            
+        }
+        .content{
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 400px;
+        }
+        .content img{
+            height: 100px;
+            width: 150x;
+            object-fit: contain;
+        }
+        h1{
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p{
+            color: #666;
+            margin-bottom: 20px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        input {
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 1rem;
+        }
+        .content button{
+             padding: 0.5rem;
+             background: linear-gradient(to right, #0094FF, #6D35FF, #FF2DAF);
+            cursor: pointer;
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            transition: background 0.3s ease-in-out ;
+            box-shadow: 0 4px 6px black;
+            
+            &:hover{
+            background: linear-gradient(to right, #0074FF, #6D55FF, #FF3DAF);
+
+            }
+        }
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <img src="../images/cup-logo.png" alt="">
+        <h1>We are coming soon</h1>
+        <p>Hello We are back in 2026</p>
+        <form id="notify">
+            <input type="email" placeholder="Enter Your Email" required>
+        <button type="submit">Notify</button>
+    </form>
+    </div>
+    
+</div>
+</body>
+</html>
