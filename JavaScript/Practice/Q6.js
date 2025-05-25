@@ -19,5 +19,5 @@ function outer() {
   function inner() {
     return "Inner function called";
   }
-  return inner();
+  return inner()
 }
