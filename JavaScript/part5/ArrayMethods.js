@@ -25,5 +25,31 @@ const users = [
   { id: 1, name: "Harsh" },
   { id: 2, name: "Amit" },
 ];
+// Use find():
+// Given an array of users:
+// [p,tio'
+// ][]]
+// js
+// Copy
+// Edit
+// const users = [
+//   { id: 1, name: "Harsh" },
+//   { id: 2, name: "Amit" }
+// ];
+// Find the user with id = 2.
+// 👉 Output: { id: 2, name: "Amit" }
 const user = users.find((item) =>  item.id === 2);
 console.log(user);
+
+// Use some():
+// Check if any number in [3, 5, 7, 8] is even.
+// // 👉 Output: true
+let arr7 = [3, 5, 7, 8];
+let arr8 = arr7.some((item) => item % 2 == 0);
+console.log(arr8)
+// Use every():
+// Check if all strings in ["apple", "banana", "cherry"] are longer than 3 characters.
+// 👉 Output: true
+
+let arr9 = ["apple", "banana", "cherry"];
+let arr10 = arr9.every((item) => item.length > 3);
