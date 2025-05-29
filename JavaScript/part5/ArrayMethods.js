@@ -53,3 +53,37 @@ console.log(arr8)
 
 let arr9 = ["apple", "banana", "cherry"];
 let arr10 = arr9.every((item) => item.length > 3);
+// Cart Total with reduce():
+// Calculate the total price.
+
+const cart = [
+  { item: "Shirt", price: 500 },
+  { item: "Pants", price: 700 },
+  { item: "Shoes", price: 1200 }
+];
+const totalPrice = cart.reduce((acc,item) => {
+    return acc + item.price
+},0);
+console.log(totalPrice);
+// Chained filter() + map():
+// Given [2, 5, 8, 11, 15], filter out even numbers and then double the remaining numbers.
+// 👉 Output: [10, 22, 30]
+let arr11 = [2, 5, 8, 11, 15];
+let arr12 = arr11.filter((item) => item % 2 == 0).map((item) => item * 2);
+console.log(arr12);
+// Use map() on objects:
+// Given:
+// const students = [
+//   { name: "Harsh", marks: 85 },
+//   { name: "Amit", marks: 72 },
+//   { name: "Ravi", marks: 90 }
+// ];
+// Create a new array that just has names of students in uppercase.
+// 👉 Output: ["HARSH", "AMIT", "RAVI"]
+const students = [
+  { name: "Harsh", marks: 85 },
+  { name: "Amit", marks: 72 },
+  { name: "Ravi", marks: 90 }
+];
+const arr13 = students.map((item) => item.name.toUpperCase());
+console.log(arr13);
