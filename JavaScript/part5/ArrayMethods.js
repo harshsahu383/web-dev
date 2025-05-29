@@ -87,3 +87,55 @@ const students = [
 ];
 const arr13 = students.map((item) => item.name.toUpperCase());
 console.log(arr13);
+// Todo Filter
+// Given an array of todo objects, filter out the completed tasks.
+
+// const todos = [
+//   { task: "Learn JS", done: true },
+//   { task: "Write code", done: false },
+//   { task: "Sleep", done: true }
+// ];
+const todos = [
+  { task: "Learn JS", done: true },
+  { task: "Write code", done: false },
+  { task: "Sleep", done: true }
+];
+const completed = todos.filter((item) => {
+    return item.done === true;
+})
+console.log(completed);
+// Group Users by Age with reduce()
+// Convert:
+// const users = [
+//   { name: "Harsh", age: 20 },
+//   { name: "Amit", age: 25 },
+//   { name: "Ravi", age: 20 }
+// ];
+// To:
+// {
+    //   20: [{ name: "Harsh", age: 20 }, { name: "Ravi", age: 20 }],
+    //   25: [{ name: "Amit", age: 25 }]
+    // }
+    
+    const users1 = [
+      { name: "Harsh", age: 20 },
+      { name: "Amit", age: 25 },
+      { name: "Ravi", age: 20 }
+    ];
+    const users2 = users1.reduce((acc,item) => {
+        // if(items.age){
+
+        // }
+    });
+//     Create a getNames function using map()
+// Return an array of just names from a user list:
+// const people = [
+//   { name: "Alice", age: 22 },
+//   { name: "Bob", age: 23 }
+// ];
+const people = [
+  { name: "Alice", age: 22 },
+  { name: "Bob", age: 23 }
+];
+const peopl = people.map((item) => item.name);
+console.log(peopl);
