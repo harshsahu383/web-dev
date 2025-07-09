@@ -297,6 +297,7 @@ flex-wrap:wrap;
     height: 0.2rem;
 }
 
+
 .progress-bar::-webkit-slider-thumb{
     appearance: none;
     height: 1rem;
