@@ -9,4 +9,4 @@ let res = arr.reduce((res,el) => {
         return el;
     }
 })
-console.log(res)
+console.log(res);
